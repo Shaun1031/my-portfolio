@@ -79,7 +79,8 @@ function Home() {
           <div className="col-md-6 d-none d-md-flex justify-content-center">
             <div className="profile-picture-container rounded-circle overflow-hidden bg-light d-flex align-items-center justify-content-center" 
               style={{ width: "200px", height: "200px", border: "5px solid white" }}>
-              <img src="/my-portfolio/me.jpg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
+       <img src={`${process.env.PUBLIC_URL}/me.jpg`} alt="Shaun Arceta" className="img-fluid rounded-circle" />
+
             </div>
           </div>
         </div>
