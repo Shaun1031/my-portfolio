@@ -69,7 +69,10 @@ function Home() {
             <div className="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
               <a href="#projects" className="btn btn-outline-light btn-block">View My Work</a>
               <a href="#contact" className="btn btn-outline-light btn-block">Contact Me</a>
-              <a href="/my-portfolio/resume.pdf" download className="btn btn-outline-light btn-block">Download My CV</a>
+            <a href="/my-portfolio/resume.pdf" download target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-block">
+  Download My CV
+</a>
+
             </div>
           </div>
           {/* Hide image on small screens */}
