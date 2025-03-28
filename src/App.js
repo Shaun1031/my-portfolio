@@ -60,23 +60,27 @@ function Home() {
           <div className="col-md-6">
           <h1 className="display-4 fw-bold text-white">
               <Typical
-                steps={["Hello, I'm Shaun", 2000, "", 500]}
+                steps={["Hello, I'm Shaun Arceta", 2000, "", 500]}
                 loop={Infinity}
                 wrapper="span"
               />
             </h1>
-            <p className="lead text-white-50">a Passionate Web Developer crafting beautiful and functionalss experiences.</p>
+            <p className="lead text-white-50">a Passionate Web Developer crafting beautiful and functional experiences.</p>
             <div className="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
               <a href="#projects" className="btn btn-outline-light btn-block">View My Work</a>
               <a href="#contact" className="btn btn-outline-light btn-block">Contact Me</a>
-              <a href="/resume.pdf" download className="btn btn-outline-light btn-block">Download My CV</a>
+            <a href="/my-portfolio/resume.pdf" download target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-block">
+  Download My CV
+</a>
+
             </div>
           </div>
           {/* Hide image on small screens */}
           <div className="col-md-6 d-none d-md-flex justify-content-center">
             <div className="profile-picture-container rounded-circle overflow-hidden bg-light d-flex align-items-center justify-content-center" 
               style={{ width: "200px", height: "200px", border: "5px solid white" }}>
-              <img src="/me.jpg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
+      <img src="/my-portfolio/me.jpg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
+
             </div>
           </div>
         </div>
