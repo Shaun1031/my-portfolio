@@ -65,7 +65,7 @@ function Home() {
                 wrapper="span"
               />
             </h1>
-            <p className="lead text-white-50">a Passionate Web Developer crafting beautiful and functional experiences.</p>
+            <p className="lead text-white-50">a Passionate Web Developer crafting beautiful and functionalss experiences.</p>
             <div className="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
               <a href="#projects" className="btn btn-outline-light btn-block">View My Work</a>
               <a href="#contact" className="btn btn-outline-light btn-block">Contact Me</a>
