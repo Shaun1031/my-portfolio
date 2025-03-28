@@ -60,7 +60,7 @@ function Home() {
           <div className="col-md-6">
           <h1 className="display-4 fw-bold text-white">
               <Typical
-                steps={["Hello, I'm Shauntidope", 2000, "", 500]}
+                steps={["Hello, I'm Shaun", 2000, "", 500]}
                 loop={Infinity}
                 wrapper="span"
               />
