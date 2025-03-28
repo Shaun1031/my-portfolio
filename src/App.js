@@ -60,7 +60,7 @@ function Home() {
           <div className="col-md-6">
           <h1 className="display-4 fw-bold text-white">
               <Typical
-                steps={["Hello, I'm Shaun", 2000, "", 500]}
+                steps={["Hello, I'm Shaun Arceta", 2000, "", 500]}
                 loop={Infinity}
                 wrapper="span"
               />
@@ -79,7 +79,7 @@ function Home() {
           <div className="col-md-6 d-none d-md-flex justify-content-center">
             <div className="profile-picture-container rounded-circle overflow-hidden bg-light d-flex align-items-center justify-content-center" 
               style={{ width: "200px", height: "200px", border: "5px solid white" }}>
-       <img src={`${process.env.PUBLIC_URL}/me.jpg`} alt="Shaun Arceta" className="img-fluid rounded-circle" />
+      <img src="/my-portfolio/me.jpg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
 
             </div>
           </div>
