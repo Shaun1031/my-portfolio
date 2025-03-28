@@ -1,0 +1,166 @@
+/* Adjust Close Button */
+/* Style for arrow buttons */
+.arrow-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+  
+  .arrow-btn:hover {
+    opacity: 1;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+
+
+.modal-content {
+    border-radius: 15px; /* Rounded corners for a card-like feel */
+    overflow: hidden; /* Ensures the child elements don't overflow the rounded edges */
+    border: none; /* Removes default border */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+  }
+  
+
+/* Modal Overlay Animations */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-overlay.fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+  
+  .modal-overlay.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+  
+  /* Modal Dialog Animations */
+  .modal-dialog {
+    width: 90%;
+    max-width: 700px;
+    background: #222;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .modal-dialog.slide-up {
+    animation: slideUp 0.3s ease-in-out forwards;
+  }
+  
+  .modal-dialog.slide-down {
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(50px);
+    }
+  }
+  
+  .project-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h5 {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .overlay button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .overlay h5,
+  .project-card:hover .overlay button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
