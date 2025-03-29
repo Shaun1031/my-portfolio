@@ -258,12 +258,12 @@ function Skills() {
 function Extras() {
   // Sample Graphic Design Images
   const graphics = [
-    { title: "", image: "/design1.png" },
-    { title: "", image: "/design2.png" },
-    { title: "", image: "/design3.png" },
-    { title: "", image: "/design5.png" },
-    { title: "", image: "/design6.png" },
-    { title: "", image: "/design7.png" },
+    { title: "", image: "/my-portfolio/design1.png" },
+    { title: "", image: "/my-portfolio/design2.png" },
+    { title: "", image: "/my-portfolio/design3.png" },
+    { title: "", image: "/my-portfolio/design5.png" },
+    { title: "", image: "/my-portfolio/design6.png" },
+    { title: "", image: "/my-portfolio/design7.png" },
   ];
 
   return (
