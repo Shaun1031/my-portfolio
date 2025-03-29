@@ -541,17 +541,17 @@ function Projects() {
     {
       title: "Dental Clinic Website",
       description: "A modern and responsive Dental Clinic reservation website made with PHP and SQL.",
-      images: ["/project1.png", "/project1-2.png", "/project1-4.png", "/project1-5.png", "/project1-6.png", "/project1-7.png"]
+      images: ["/my-portfolio/project1.png", "/my-portfolio/project1-2.png", "/my-portfolio/project1-4.png", "/my-portfolio/project1-5.png", "/my-portfolio/project1-6.png", "/my-portfolio/project1-7.png"]
     },
     {
       title: "Wall of Pictures Website",
       description: "A website where users can upload pictures, share them with others, and win prizes.",
-      images: ["/project2.png", "/project2-2.png", "/project2-3.png"]
+      images: ["/my-portfolio/project2.png", "/my-portfolio/project2-2.png", "/my-portfolio/project2-3.png"]
     },
     {
       title: "Permit Fecthing Website",
       description: "A simple website that fetches user submitted permits from a database and displays them in a table using Node and React",
-      images: ["/project3.png", "/blogcms2.jpg", "/blogcms3.jpg"]
+      images: ["/my-portfolio/project3.png", "/blogcms2.jpg", "/blogcms3.jpg"]
     }
   ];
 
@@ -664,7 +664,7 @@ function Contact() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
