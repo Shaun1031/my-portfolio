@@ -81,7 +81,7 @@ function Home() {
           <div className="col-md-6 d-none d-md-flex justify-content-center">
             <div className="profile-picture-container rounded-circle overflow-hidden bg-light d-flex align-items-center justify-content-center" 
               style={{ width: "200px", height: "200px", border: "5px solid white" }}>
-      <img src="/my-portfolio/Shaun.jpeg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
+      <img src="/Shaun.jpeg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
 
             </div>
           </div>
@@ -260,12 +260,12 @@ function Skills() {
 function Extras() {
   // Sample Graphic Design Images
   const graphics = [
-    { title: "", image: "/my-portfolio/design1.png" },
-    { title: "", image: "/my-portfolio/design2.png" },
-    { title: "", image: "/my-portfolio/design3.png" },
-    { title: "", image: "/my-portfolio/design5.png" },
-    { title: "", image: "/my-portfolio/design6.png" },
-    { title: "", image: "/my-portfolio/design7.png" },
+    { title: "", image: "/design1.png" },
+    { title: "", image: "/design2.png" },
+    { title: "", image: "/design3.png" },
+    { title: "", image: "/design5.png" },
+    { title: "", image: "/design6.png" },
+    { title: "", image: "/design7.png" },
   ];
 
   return (
@@ -543,17 +543,17 @@ function Projects() {
     {
       title: "Dental Clinic Website",
       description: "A modern and responsive Dental Clinic reservation website made with PHP and SQL.",
-      images: ["/my-portfolio/project1.png", "/my-portfolio/project1-2.png", "/my-portfolio/project1-4.png", "/my-portfolio/project1-5.png", "/my-portfolio/project1-6.png", "/my-portfolio/project1-7.png"]
+      images: ["/project1.png", "/project1-2.png", "/project1-4.png", "/project1-5.png", "/project1-6.png", "/project1-7.png"]
     },
     {
       title: "Wall of Pictures Website",
       description: "A website where users can upload pictures, share them with others, and win prizes.",
-      images: ["/my-portfolio/project2.png", "/my-portfolio/project2-2.png", "/my-portfolio/project2-3.png"]
+      images: ["/project2.png", "/project2-2.png", "/project2-3.png"]
     },
     {
       title: "Permit Fecthing Website",
       description: "A simple website that fetches user submitted permits from a database and displays them in a table using Node and React",
-      images: ["/my-portfolio/project3.png", "/blogcms2.jpg", "/blogcms3.jpg"]
+      images: ["/project3.png", "/blogcms2.jpg", "/blogcms3.jpg"]
     }
   ];
 
