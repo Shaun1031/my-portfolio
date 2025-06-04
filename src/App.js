@@ -9,7 +9,8 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 import "./navbar.css";
 import "./projects.css";
 import "./Contact.css";
-import Typical from "react-typical";
+
+import { TypeAnimation } from "react-type-animation";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "react-time-picker/dist/TimePicker.css";
@@ -58,13 +59,14 @@ function Home() {
       <div className="container">
         <div className="row align-items-center text-center text-md-start">
           <div className="col-md-6">
-          <h1 className="display-4 fw-bold text-white">
-              <Typical
-                steps={["Hello, I'm Shaun", 2000, "", 500]}
-                loop={Infinity}
-                wrapper="span"
-              />
-            </h1>
+         <h1 className="display-4 fw-bold text-white">
+  <TypeAnimation
+    sequence={["Hello, I'm Shaun", 2000, ""]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</h1>
             <p className="lead text-white-50">a Passionate Web Developer crafting beautiful and functional experiences.</p>
             <div className="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
               <a href="#projects" className="btn btn-outline-light btn-block">View My Work</a>
@@ -79,7 +81,7 @@ function Home() {
           <div className="col-md-6 d-none d-md-flex justify-content-center">
             <div className="profile-picture-container rounded-circle overflow-hidden bg-light d-flex align-items-center justify-content-center" 
               style={{ width: "200px", height: "200px", border: "5px solid white" }}>
-      <img src="/my-portfolio/me.jpg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
+      <img src="/my-portfolio/Shaun.jpeg" alt="Shaun Arceta" className="img-fluid rounded-circle" />
 
             </div>
           </div>
@@ -720,6 +722,8 @@ function Contact() {
                   <textarea name="message" value={formData.message} onChange={handleChange} className={`form-control floating-input ${formData.message ? "has-value" : ""}`} rows="3" required></textarea>
                   <label className="floating-label">Your Message</label>
                 </div>
+
+            
  
                 {/* Submit Button */}
                 <button type="submit" className="btn btn-dark w-1" style={{ backgroundColor: "#000", border: "2px solid #000", fontWeight: "normal", borderRadius: "30px", transition: "all 0.3s ease-in-out" }}
@@ -727,6 +731,7 @@ function Contact() {
                   onMouseOut={(e) => { e.target.style.backgroundColor = "#000"; e.target.style.color = "#FFF"; }}>
                   {loading ? "Sending..." : "Send Message"}
                 </button>
+                
               </form>
             </div>
 
